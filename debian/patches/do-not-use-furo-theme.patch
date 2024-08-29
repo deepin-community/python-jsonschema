@@ -1,0 +1,20 @@
+Description: Do not use furo theme
+ This Sphinx theme isn't available in Debian, and I don't think it's
+ important, so just disabling it for now.
+Author: Thomas Goirand <zigo@debian.org>
+Forwarded: not-needed
+Last-Update: 2022-06-13
+
+Index: python-jsonschema/docs/conf.py
+===================================================================
+--- python-jsonschema.orig/docs/conf.py
++++ python-jsonschema/docs/conf.py
+@@ -34,7 +34,7 @@
+ pygments_style = "lovelace"
+ pygments_dark_style = "one-dark"
+ 
+-html_theme = "furo"
++#html_theme = "furo"
+ 
+ # See sphinx-doc/sphinx#10785
+ _TYPE_ALIASES = {
